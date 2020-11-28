@@ -66,7 +66,7 @@ const LandingPage: React.FC<Props> = ({ onContinue }: Props) => {
             paddingBottom: 10,
           }}
         >
-          Rita Cabrito, Armando Gonzalez and Chris Newth
+          Rita Cabrito, Armando Gonzalez, and Chris Newth
         </div>
         <Button
           onClick={() => {
