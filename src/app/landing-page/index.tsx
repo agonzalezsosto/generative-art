@@ -3,64 +3,82 @@ import p5 from 'p5'
 import SpiderSketch from './spider-sketch'
 import styled from 'styled-components'
 
+const Container = styled.div`
+  color: black;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+`
+
 const Button = styled.div`
-  fontSize: 40,
-  fontWeight: 'bold',
-  fontFamily: 'Source Sans Pro',
+  font-size: 25;
+  font-family: Source Sans Pro;
   &:hover {
     cursor: pointer;
   }
+  font-style: italic;
 `
+
 type Props = {
   onContinue: () => void
 }
 
 const LandingPage: React.FC<Props> = ({ onContinue }: Props) => {
   const canvas = useRef<HTMLElement>()
+  const sketch = useRef<p5>()
 
   useEffect(() => {
-    new p5(SpiderSketch, canvas.current)
-  })
+    sketch.current = new p5(SpiderSketch, canvas.current)
+  }, [])
+
   return (
     <div
+      ref={() => canvas.current}
       style={{
-        color: 'black',
+        position: 'absolute',
+        justifyContent: 'center',
         display: 'flex',
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         width: '100%',
         height: '100%',
-        flexDirection: 'column',
       }}
     >
-      <div
-        style={{
-          fontSize: 40,
-          fontWeight: 'bold',
-          fontFamily: 'Source Sans Pro',
-        }}
-      >
-        Generative Art
-      </div>
-      <Button
-        style={{
-          fontSize: 25,
-          fontWeight: 'normal',
-          fontFamily: 'Source Sans Pro',
-        }}
-        onClick={() => {
-          console.log('da')
-        }}
-      >
-        Enter
-      </Button>
+      <Container>
+        <div
+          style={{
+            fontSize: 40,
+            fontWeight: 'bold',
+            fontFamily: 'Source Sans Pro',
+            paddingBottom: 10,
+          }}
+        >
+          Generative Art
+        </div>
+        <div
+          style={{
+            fontSize: 25,
+            fontFamily: 'Source Sans Pro',
+            paddingBottom: 10,
+          }}
+        >
+          Rita Cabrito, Armando Gonzalez and Chris Newth
+        </div>
+        <Button
+          onClick={() => {
+            onContinue()
+            sketch.current?.remove()
+          }}
+        >
+          Enter
+        </Button>
+      </Container>
     </div>
   )
 }
-// margin: 0; height: 100%; overflow: hidden
-export default LandingPage
 
-// position: fixed;
-// overflow-y: scroll;
-// top: 0; right: 0; bottom: 0; left: 0; }
+export default LandingPage
