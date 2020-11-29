@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import Introduction from './components/introduction'
 import History from './components/history'
 import Frankenstein from './components/frankenstein'
-import Biology from './components/biology'
+import Emergence from './components/emergence'
 import Conclusion from './components/conclusion'
+import BotanicalSystems from './components/botanical-systems'
 
 const ContainerBox = styled.div`
   display: flex;
@@ -42,7 +43,8 @@ const menuItems = [
   'Introduction',
   'History',
   'Frankenstein Effect',
-  'Biology',
+  'Emergence',
+  'Botanical Systems',
   'Conclusion',
 ]
 
@@ -62,9 +64,12 @@ const CategoryTabs: React.FC = () => {
       currentComponent = <Frankenstein />
       break
     case 3:
-      currentComponent = <Biology />
+      currentComponent = <Emergence />
       break
     case 4:
+      currentComponent = <BotanicalSystems />
+      break
+    case 5:
       currentComponent = <Conclusion />
       break
     default:

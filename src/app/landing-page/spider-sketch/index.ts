@@ -18,7 +18,8 @@ const SpiderSketch = (p: p5) => {
   let lines: Array<LinesType> = []
 
   p.setup = () => {
-    p.createCanvas(p.displayWidth, p.displayHeight)
+    const cnv = p.createCanvas(p.displayWidth, p.displayHeight)
+    cnv.style('display', 'block')
     p.strokeWeight(0.6)
 
     for (let i = 0; i < 100; i++) {
