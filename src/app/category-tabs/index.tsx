@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Introduction from './components/introduction'
+import Randomness from './components/randomness'
 import History from './components/history'
-import Frankenstein from './components/frankenstein'
 import Emergence from './components/emergence'
 import Conclusion from './components/conclusion'
 import BotanicalSystems from './components/botanical-systems'
@@ -42,7 +42,7 @@ const TabButton = styled.div<{ isActive: boolean }>`
 const menuItems = [
   'Introduction',
   'History',
-  'Frankenstein Effect',
+  'Randomness',
   'Emergence',
   'Botanical Systems',
   'Conclusion',
@@ -61,7 +61,7 @@ const CategoryTabs: React.FC = () => {
       currentComponent = <History />
       break
     case 2:
-      currentComponent = <Frankenstein />
+      currentComponent = <Randomness />
       break
     case 3:
       currentComponent = <Emergence />

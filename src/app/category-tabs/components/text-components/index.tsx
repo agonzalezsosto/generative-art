@@ -45,3 +45,11 @@ export const P5Subtitle = styled.div`
 export const P5ControlsDiv = styled.div`
   padding: 10px;
 `
+export const Tab = styled.div<{ isActive: boolean }>`
+  &:hover {
+    cursor: pointer;
+  }
+  padding-left: 10px;
+  padding-right: 10px;
+ font-weight ${(props) => (props.isActive ? 'bold' : 'normal')};
+`
