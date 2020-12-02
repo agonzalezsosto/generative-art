@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import p5 from 'p5'
-import SpiderSketch from './spider-sketch'
+import { SpiderSketch } from '../sketches'
 import styled from 'styled-components'
 
 const Container = styled.div`

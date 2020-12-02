@@ -9,7 +9,11 @@ import {
   P5Subtitle,
   P5ControlsDiv,
 } from '../text-components'
-import { TreeSketch, updateDimA, updateDimB } from './tree-sketch'
+import {
+  TreeSketch,
+  updateDimA,
+  updateDimB,
+} from '../../../sketches/tree-sketch'
 
 const BotanicalSystems: React.FC = () => {
   const canvas = useRef<HTMLElement>()
