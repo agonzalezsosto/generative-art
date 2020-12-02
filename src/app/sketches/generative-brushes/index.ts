@@ -12,7 +12,7 @@ const GenerativeBrush = (p: p5) => {
   let bck = p.color('#FCFCF8')
 
   p.setup = () => {
-    const cnv = p.createCanvas(1300, 200)
+    const cnv = p.createCanvas(600, 600)
     cnv.parent('container-brush')
     p.background(bck)
 

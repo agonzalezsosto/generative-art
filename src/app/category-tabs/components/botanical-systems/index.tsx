@@ -49,7 +49,7 @@ const BotanicalSystems: React.FC = () => {
         have also been used to model the morphology of a variety of organisms
         and can be used to generate self-similar fractals.
       </Body>
-      <P5Div id="container-tree">
+      <P5Div canvasId="container-tree">
         <P5ControlsDiv>
           <input
             type="range"

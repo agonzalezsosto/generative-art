@@ -37,7 +37,7 @@ const Introduction: React.FC = () => {
     <TextContainer>
       <Title>Introduction</Title>
       <Subtitle>Hello, generative art!</Subtitle>
-      <P5Div id="container-brush" />
+      <P5Div canvasId="container-brush" />
       <div
         style={{
           flex: 1,

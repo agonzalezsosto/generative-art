@@ -38,7 +38,7 @@ const Emergence: React.FC = () => {
         engineering design. Over time, simpler life constructions were provided
         by other researchers, and published in papers and books.
       </Body>
-      <P5Div id="container-gol">
+      <P5Div canvasId="container-gol">
         <P5Subtitle>Game of Life</P5Subtitle>
       </P5Div>
 
