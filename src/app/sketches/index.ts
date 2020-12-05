@@ -9,5 +9,10 @@ export { default as ChrisFractal } from './chris-fractal'
 export { default as CreepyTrees } from './creepy-trees'
 export { default as LSystem } from './l-system'
 export { default as FlockingSketch } from './flocking-sketch'
+export {
+  updateMaxForce,
+  updateMaxSpeed,
+  updatePerceptionRadius,
+} from './flocking-sketch/boid'
 export { default as LetterBombSketch } from './letterbomb-sketch'
 export { default as HyperbolicSketch } from './hyperbolic-randomness'

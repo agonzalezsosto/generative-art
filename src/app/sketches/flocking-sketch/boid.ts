@@ -9,15 +9,27 @@ export type BoidType = {
   velocity: p5.Vector
 }
 
+let perceptionRadius = 200
+let maxSpeed = 10
+let maxForce = 3
+
+export const updatePerceptionRadius = (val: number) => {
+  perceptionRadius = p5.prototype.map(val, 0, 100, 10, 500)
+}
+
+export const updateMaxSpeed = (val: number) => {
+  maxSpeed = p5.prototype.map(val, 0, 100, 3, 20)
+}
+
+export const updateMaxForce = (val: number) => {
+  maxForce = p5.prototype.map(val, 0, 100, 0.2, 1.6)
+}
+
 export const Boid = (p: p5) => {
   let position = p.createVector(p.random(p.width), p.random(p.height))
   let velocity = p.createVector(p.random(0, 0.01), p.random(0, 0.01))
   let acceleration = p.createVector(p.random(0, 0.01), p.random(0, 0.01))
   let color: p5.Color = p.color(255)
-
-  const perceptionRadius = 100
-  const maxSpeed = 5
-  const maxForce = 0.6
 
   const edges = () => {
     if (position.x < 0) {
@@ -177,5 +189,12 @@ export const Boid = (p: p5) => {
     position = p.createVector(p.random(p.width), p.random(p.height))
   }
 
-  return { update, show, flock, reset, position, velocity }
+  return {
+    update,
+    show,
+    flock,
+    reset,
+    position,
+    velocity,
+  }
 }

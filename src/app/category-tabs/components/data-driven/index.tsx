@@ -8,8 +8,8 @@ import {
   Img,
   P5Div,
   P5Subtitle,
-} from './text-components'
-import { IssSketch } from '../../sketches'
+} from '../text-components'
+import { IssSketch } from '../../../sketches'
 
 const DataDriven: React.FC = () => {
   useEffect(() => {

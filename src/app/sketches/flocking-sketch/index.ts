@@ -7,7 +7,8 @@ const FlockingSketch = (p: p5) => {
   let color = p.color(255)
 
   p.setup = () => {
-    p.createCanvas(600, 600)
+    const cnv = p.createCanvas(600, 400)
+    cnv.parent('container-flocking')
     p.strokeWeight(2)
     p.background(0)
     for (let i = 0; i < numBoids; i++) {

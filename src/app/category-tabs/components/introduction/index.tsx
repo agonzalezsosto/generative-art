@@ -1,7 +1,5 @@
-import React, { useEffect, useRef } from 'react'
-import { TextContainer, Title, Subtitle, Tab, P5Div } from '../text-components'
-import p5 from 'p5'
-import { LSystem } from '../../../sketches'
+import React from 'react'
+import { TextContainer, Title, Subtitle, Tab } from '../text-components'
 import Concept from './concept'
 import Why from './why'
 import How from './how'
@@ -9,13 +7,6 @@ import How from './how'
 const subtitles = ['Concept', 'Why a website?', 'How does this work?']
 
 const Introduction: React.FC = () => {
-  const canvas = useRef<HTMLElement>()
-  const sketch = useRef<p5>()
-
-  useEffect(() => {
-    sketch.current = new p5(LSystem, canvas.current)
-  }, [])
-
   const [currentTab, setCurrentTab] = React.useState<number>(0)
 
   let bod
@@ -37,7 +28,6 @@ const Introduction: React.FC = () => {
     <TextContainer>
       <Title>Introduction</Title>
       <Subtitle>Hello, generative art!</Subtitle>
-      <P5Div canvasId="container-brush" />
       <div
         style={{
           flex: 1,

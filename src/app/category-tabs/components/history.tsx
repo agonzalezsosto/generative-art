@@ -22,12 +22,6 @@ const History: React.FC = () => {
     <TextContainer>
       <Title>History</Title>
       <Subtitle>Generative art vs computational art</Subtitle>
-      <Img
-        link="http://www.leonelmoura.com/wp-content/uploads/2019/01/bebot_astana.jpg"
-        alt="Leonel Moura"
-        width="500px"
-        subtitle="Fig. 1: Bebot, Leonel Moura. 2017."
-      />
       <Body>
         <em>
           Generative art refers to any art practice in which the artist uses a
@@ -51,12 +45,6 @@ const History: React.FC = () => {
         states that generative art is not necessarily under the computational
         art category.
       </Body>
-      <Img
-        link="https://hyperallergic.com/wp-content/uploads/2015/12/One-Number-31-1950.jpg"
-        alt="Pollock"
-        width="500px"
-        subtitle="Fig. 2: Number 1A, Jackson Pollock. 1948."
-      />
       <Body>
         When Jackson Pollock created his first ‘Action Painting’ in 1948, he
         used his body and brush to drip and splash oil paint on the canvas, in
@@ -79,6 +67,20 @@ const History: React.FC = () => {
           Architecture’, 2006).
         </a>
       </Body>
+      <div style={{ display: 'flex', flex: 1, flexDirection: 'row' }}>
+        <Img
+          link="http://www.leonelmoura.com/wp-content/uploads/2019/01/bebot_astana.jpg"
+          alt="Leonel Moura"
+          width="500px"
+          subtitle="Fig. 1: Bebot, Leonel Moura. 2017."
+        />
+        <Img
+          link="https://hyperallergic.com/wp-content/uploads/2015/12/One-Number-31-1950.jpg"
+          alt="Pollock"
+          width="500px"
+          subtitle="Fig. 2: Number 1A, Jackson Pollock. 1948."
+        />
+      </div>
       <Body>
         Although the exploration of these methods started almost 100 years ago,
         it still remains incredibly significant (see figure 1). Leonel Moura is
@@ -111,7 +113,15 @@ const History: React.FC = () => {
           I wanted to give the audience every opportunity for pleasure, for
           pain, for tenderness and also the possibility of death; (...) I wanted
           to see what the public would do if I didn't do anything (...)
-        </em>
+        </em>{' '}
+        <a
+          href="https://www.dazeddigital.com/art-photography/article/39128/1/how-to-live-according-to-artist-marina-abramovic-sean-kelly-early-works-new-york"
+          target="_blank"
+          rel="noreferrer"
+        >
+          (Marina Abramović in ‘How to Live according to Marina Abramović, Daze
+          Digital, 2018)
+        </a>
       </Body>
       <Img
         link="https://unbelievable-facts.com/wp-content/uploads/2017/08/Rhythm-0-by-Marina-Abramovic-7.jpg"
