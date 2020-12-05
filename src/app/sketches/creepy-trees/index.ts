@@ -2,8 +2,8 @@ import p5 from 'p5'
 
 const CreepyTrees = (p: p5) => {
   p.setup = () => {
-    const cnv = p.createCanvas(300, 300)
-    cnv.parent('container-brush')
+    const cnv = p.createCanvas(600, 400)
+    cnv.parent('container-creepy')
     p.stroke(255)
     p.strokeWeight(3)
   }

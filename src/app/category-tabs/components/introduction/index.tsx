@@ -57,6 +57,7 @@ const Introduction: React.FC = () => {
         ))}
       </div>
       {bod}
+      <div style={{ height: 30 }} />
     </TextContainer>
   )
 }

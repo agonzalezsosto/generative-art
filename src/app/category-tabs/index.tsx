@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Introduction from './components/introduction'
 import Randomness from './components/randomness'
+import DataDriven from './components/data-driven'
 import History from './components/history'
 import Emergence from './components/emergence'
 import Conclusion from './components/conclusion'
-import BotanicalSystems from './components/botanical-systems'
+import Biology from './components/biology'
 
 const ContainerBox = styled.div`
   display: flex;
@@ -43,8 +44,9 @@ const menuItems = [
   'Introduction',
   'History',
   'Randomness',
+  'Data-Driven',
   'Emergence',
-  'Botanical Systems',
+  'Biological Systems',
   'Conclusion',
 ]
 
@@ -64,12 +66,15 @@ const CategoryTabs: React.FC = () => {
       currentComponent = <Randomness />
       break
     case 3:
-      currentComponent = <Emergence />
+      currentComponent = <DataDriven />
       break
     case 4:
-      currentComponent = <BotanicalSystems />
+      currentComponent = <Emergence />
       break
     case 5:
+      currentComponent = <Biology />
+      break
+    case 6:
       currentComponent = <Conclusion />
       break
     default:

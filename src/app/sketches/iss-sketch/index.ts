@@ -5,8 +5,8 @@ const IssSketch = (p: p5) => {
   let longitude: number = 0
 
   p.setup = () => {
-    const cnv = p.createCanvas(1300, 200)
-    cnv.parent('container-brush')
+    const cnv = p.createCanvas(600, 400)
+    cnv.parent('container-iss')
     p.frameRate(0.5)
     p.background(0)
   }
