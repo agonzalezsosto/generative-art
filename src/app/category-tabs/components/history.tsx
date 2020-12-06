@@ -83,12 +83,12 @@ const History: React.FC = () => {
       </div>
       <Body>
         Although the exploration of these methods started almost 100 years ago,
-        it still remains incredibly significant (see figure 1). Leonel Moura is
-        a computational artist who is also interested in creating generative
-        art. He explores the same idea of random repetition with the creation of
-        his own tools - small wheeled robots that draw on the surface with
-        marker pens based on the rules of his algorithm - in order to produce a
-        generative artwork.
+        it still remains incredibly significant (see figure 1 and figure 2).
+        Leonel Moura is a computational artist who is also interested in
+        creating generative art. He explores the same idea of random repetition
+        with the creation of his own tools - small wheeled robots that draw on
+        the surface with marker pens based on the rules of his algorithm - in
+        order to produce a generative artwork.
       </Body>
       <Body>
         This is an example of a simple generative art program that Rita created

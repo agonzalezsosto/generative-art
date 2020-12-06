@@ -27,15 +27,23 @@ const DataDriven: React.FC = () => {
         re-inventing and modernising generative art and emergence. With
         smartphones and fitness trackers capturing so much data, this is
         becoming easier and affordable for artists. For example, data from
-        cycling has been used (O'Neill, Shaleph J. , 2018) to create generative
-        / emergent patterns and the fact that the pattern relates to the length
-        of journey, heart rate, altitude, speed etc (taken from GPS) the
-        patterns arguably have agency and can be considered as art. O’Neill
-        explains that “the resultant visualization should not only clearly
-        represent [the] data but it should also begin to establish colour
-        patterns for the kinds of experiences that cycling involves”. Also, the
-        exact same journey carried out by the exact same person, but on a
-        different day, produces a different pattern (maybe due to different
+        cycling has been used{' '}
+        <a
+          href="https://www.tandfonline.com/doi/full/10.1080/14626268.2018.1516676"
+          target="_blank"
+          rel="noreferrer"
+        >
+          (O'Neill, Shaleph J., "Making Art from Self-tracking Cycling Data.",
+          2018){' '}
+        </a>
+        to create generative / emergent patterns and the fact that the pattern
+        relates to the length of journey, heart rate, altitude, speed etc (taken
+        from GPS) the patterns arguably have agency and can be considered as
+        art. O’Neill explains that “the resultant visualization should not only
+        clearly represent [the] data but it should also begin to establish
+        colour patterns for the kinds of experiences that cycling involves”.
+        Also, the exact same journey carried out by the exact same person, but
+        on a different day, produces a different pattern (maybe due to different
         weather conditions, fitness levels, traffic, time of day, state of mind
         etc), making it truly generative and thought provoking. In the article
         (cited below), O’Neil explains that Perlin noise and randomness were
@@ -66,7 +74,7 @@ const DataDriven: React.FC = () => {
           title="Chris-bike"
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/-zUvJAdTSTI?start=130"
+          src="https://www.youtube.com/embed/-zUvJAdTSTI?start=28"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         ></iframe>
@@ -84,16 +92,22 @@ const DataDriven: React.FC = () => {
       </Body>
       <Body>
         To illustrate and replicate some of the emerging patterns from the bike
-        wheel project, consider the P5.js sketch below. In this sketch, patterns
-        emerge from the audio (rather than acceleration) and user interactions
-        (mouse movements). Different patterns will emerge depending on the audio
-        and the user involved. But, looking back at the categorisations of
-        emergence, can this be considered an example of generative art
-        emergence? There is certainly a degree of autonomy and, at first, there
-        may be a sense of mystery, surprise and wonder. But, arguably, that
-        quickly wears off as it becomes evident to the observer how the system
-        works. This leads us into an interesting discussion on the lifespan of
-        generative art and emergence, which is discussed further below.
+        wheel project, consider the P5.js sketch below. In this sketch,
+        variations in the patterns are generated from perlin noise (rather than
+        acceleration) and user interactions (mouse movements). Different
+        patterns will emerge depending on the noise value / profile and the
+        interactions. Rather than resembling glass blowing patterns (as with the
+        bike wheel project above), the patterns that emerge remind me of snake
+        skins, ropes, mermaid tails and sequins - Once again, the patterns were
+        somewhat of a pleasant surprise, as I hadn’t planned or envisaged them
+        to be rope-like, snake like etc. But, looking back at the
+        categorisations of emergence, can this be considered an example of
+        generative art emergence? There is certainly a degree of autonomy and,
+        at first, there may be a sense of mystery, surprise and wonder. But,
+        arguably, that quickly wears off as it becomes evident to the observer
+        how the system works and behaves. This leads us into an interesting
+        discussion on the lifespan of generative art and emergence, which is
+        discussed in the conclusion tab of this website.
       </Body>
       <div
         style={{
@@ -107,32 +121,10 @@ const DataDriven: React.FC = () => {
         <iframe
           style={{ height: 800, width: 400 }}
           title="chris-p5"
-          src="https://editor.p5js.org/chrisnewth/embed/8360go-Mh"
+          src="https://editor.p5js.org/chrisnewth/embed/swkreTu7d"
         ></iframe>
       </div>
-      <Subtitle>Lifespan of Generative Art</Subtitle>
-      <Body>
-        To consider this, we can perhaps look at how other modern artworks can
-        be enduring. In Sonic Placemaking (Lacey, 2016), the article looks at
-        successful, enduring sound art installations that are embraced and
-        valued by visitors. The research showed that “each of the creators
-        exhibited deep relationships with their chosen sites of intervention”
-        and that “the creators are able to augment a pre-existing ‘spirit of
-        place’, which informs the ‘life’ of the installation”. So, maybe an
-        enduring generative artwork also needs to establish a connection and
-        resonance with its surroundings and it’s audience rather than just
-        creating a sense of mystery, surprise, wonder etc (as previously alluded
-        to and defined). And, maybe where the artwork sits, within us and within
-        our world / environment, can make it enduring and relevant. This is
-        perhaps why the flocking algorithms and patterns still work - As we, as
-        humans, as part of nature and it’s ecosystem, have a primal connection
-        to birds, fish and continue to be amazed by, and immersed in, the
-        natural world. We want to understand it, be part of it and simulate it.
-        The article also discusses how an elemental approach (using wind, water,
-        air, etc) to a sound installation can make it successful and enduring,
-        linking in with our theme of using nature (and inspirations from nature)
-        to create worthy, interesting and enduring generative art.
-      </Body>
+      <Subtitle>Working with APIs</Subtitle>
       <Body>
         In an attempt to create an example of generative art that situates and
         figures itself in our world / environment, I have created a p5.js sketch
@@ -145,11 +137,37 @@ const DataDriven: React.FC = () => {
         meaning. Whilst this is a very basic example of generative art, it
         serves as a useful reminder of how we can use external data and APIs.
         Maybe it’s also an example of ‘the stack’ mentioned in the Week 8
-        Goldsmiths lecture (Benjamin Bratton) and planetary scale computing,
-        where we can get data beyond our geographical boundaries; in this case
-        reaching into space to get it (via an API of course).
+        Goldsmiths lecture{' '}
+        <a
+          href="https://www-jstor-org.gold.idm.oclc.org/stable/43631624?seq=1#metadata_info_tab_contents"
+          target="_blank"
+          rel="noreferrer"
+        >
+          (Benjamin Bratton, The Stack, 2015)
+        </a>{' '}
+        and planetary scale computing, where we can get data beyond our
+        geographical boundaries; in this case reaching into space to get it (via
+        an API of course).
       </Body>
-      <P5Div canvasId="container-iss" />
+      <P5Div
+        canvasId="container-iss"
+        subtitle="Pattern produced from ISS position (line length and shade controlled by latitude and longitude."
+      />
+      <Subtitle> Summary and further thoughts</Subtitle>
+      <Body>
+        In this subsection, we have considered a definition (and criteria) for
+        emergence and generative art and have looked at some examples and
+        effects. As society gets familiar with computational art, the surprise
+        factor of generative art may be short lived or difficult to achieve
+        through traditional methods , so fresh, innovative ways of producing it
+        are necessary, harnessing latest technologies such as AI and wearable
+        tech. It should be remembered and acknowledged that generative art is a
+        partnership and collaboration between human, machine and nature (if data
+        sets from natural sources are used). Therefore, generative art is
+        possibly an example where human, machine and nature can be seen as
+        equals. Consequently, there are interesting links with natureculture and
+        feminist technoscience to explore, exploit and research.
+      </Body>
     </TextContainer>
   )
 }

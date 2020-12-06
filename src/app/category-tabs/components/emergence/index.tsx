@@ -21,41 +21,53 @@ const Emergence: React.FC = () => {
   return (
     <TextContainer>
       <Title>Emergence</Title>
-      <Subtitle>Below you'll find some filler text</Subtitle>
+      <Subtitle>Categorising and defining emergence</Subtitle>
       <Body>
-        In late 1940, John von Neumann defined life as a creation (as a being or
-        organism) which can reproduce itself and simulate a Turing machine. Von
-        Neumann was thinking about an engineering solution which would use
-        electromagnetic components floating randomly in liquid or gas. This
-        turned out not to be realistic with the technology available at the
-        time. Stanislaw Ulam invented cellular automata, which were intended to
-        simulate von Neumann's theoretical electromagnetic constructions. Ulam
-        discussed using computers to simulate his cellular automata in a
-        two-dimensional lattice in several papers. In parallel, von Neumann
-        attempted to construct Ulam's cellular automaton. Although successful,
-        he was busy with other projects and left some details unfinished. His
-        construction was complicated because it tried to simulate his own
-        engineering design. Over time, simpler life constructions were provided
-        by other researchers, and published in papers and books.
+        Generative art is an example of emergence, so this is a good starting
+        point for categorising it. In a Leonardo article,{' '}
+        <a
+          href="https://www-jstor-org.gold.idm.oclc.org/stable/40540082?seq=1#metadata_info_tab_contents"
+          target="_blank"
+          rel="noreferrer"
+        >
+          (Gordon Monro, Emergence and Generative Art, 2009)
+        </a>
+        we learn about categories such as Subjective Emergence and Objective
+        Emergence and Frankenstein Emergence (more on that later). The article
+        was written in 2009, but the categories seem logical and, at least to
+        me, relevant today.
       </Body>
-      <P5Div canvasId="container-gol">
-        <P5Subtitle>Game of Life</P5Subtitle>
-      </P5Div>
-
       <Body>
-        Motivated by questions in mathematical logic and in part by work on
-        simulation games by Ulam, among others, John Conway began doing
-        experiments in 1968 with a variety of different two-dimensional cellular
-        automaton rules. Conway's initial goal was to define an interesting and
-        unpredictable cell automaton. For example, he wanted some configurations
-        to last for a long time before dying and other configurations to go on
-        forever without allowing cycles. It was a significant challenge and an
-        open problem for years before experts on cellular automata managed to
-        prove that, indeed, the Game of Life admitted of a configuration which
-        was alive in the sense of satisfying Von Neumann's two general
-        requirements. While the definitions before the Game of Life were
-        proof-oriented, Conway's construction aimed at simplicity without a
-        priori providing proof the automaton was alive.
+        In the definition of Subjective Emergence there is reference to
+        'surprise' i.e. something unexpected and surprising has emerged. The
+        need for 'surprise' is later on included as a desirable outcome for
+        generative art.
+      </Body>
+      <Body>
+        In the definition of Objective Emergence the author cites the difficulty
+        of predicting the outcome / emergence and how simple rules can lead to
+        complex behaviour. This implies a sense of mystery. The need for
+        'mystery' is later on included as another desirable for generative art.
+      </Body>
+      <P5Div
+        canvasId="container-gol"
+        subtitle="Conway's Game of Life - a classic example of emergence"
+      ></P5Div>
+      <Body>
+        The author goes on to propose his definition for Generative Art
+        Emergence, which is that it should evoke feelings of surprise, wonder
+        and mystery and that there should be some form of autonomy, where the
+        system (or art) takes on a life of its own. For example, even if we have
+        knowledge of the system, there still needs to be a sense of surprise,
+        mystery and wonder in what it produces (or how it produces that). The
+        article points out though, that the element of surprise might wear off
+        over time as we become familiar with things like fractal art and
+        flocking algorithms. At one point, early on in their development, such
+        art pieces evoked feelings of surprise, wonder and mystery but maybe
+        they now need to be re-imagined, repurposed and re-invented to maintain
+        it. So this brings up an interesting point - That generative art
+        potentially has a shelf life and needs to be re-generated. 'Regenerated
+        generative art', if you like.
       </Body>
     </TextContainer>
   )
