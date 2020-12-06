@@ -51,7 +51,7 @@ const Emergence: React.FC = () => {
       </Body>
       <P5Div
         canvasId="container-gol"
-        subtitle="Conway's Game of Life - a classic example of emergence"
+        subtitle="Conway's Game of Life - a classic example of emergence. Click and drag to seed random cells"
       ></P5Div>
       <Body>
         The author goes on to propose his definition for Generative Art

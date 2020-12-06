@@ -29,11 +29,20 @@ const Concept: React.FC = () => (
     <Body>
       In the{' '}
       <b>
-        <em>Random</em>
+        <em>Randomness</em>
       </b>{' '}
       tab, we explore different usages of randomness and noise in the generation
       of artistic pieces, and how the usage of unexpected values can cause
       intriguing results.
+    </Body>
+    <Body>
+      In the{' '}
+      <b>
+        <em>Data-Driven </em>
+      </b>
+      tab, we explore the importance of data in generative art. How by gathering
+      simple information we can create engaging artworks by visualizing this
+      data.
     </Body>
     <Body>
       In the{' '}
