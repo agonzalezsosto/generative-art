@@ -101,6 +101,43 @@ const History: React.FC = () => {
         subtitle="Fig. 3: Generative Sketch, Rita Cabrito. 2020."
       />
       <Body>
+        Dadaism was an art movement that surged before Abstract Expressionism
+        and focused on the use of random objects to challenge the definition of
+        art itself. Marcel Duchamp, by placing a urinal at the Society of
+        Independent Artists, New York, 1917, initialised the ongoing question of
+        ‘what is art?’, of which no one will ever agree on a single definition.
+      </Body>
+      <Body>
+        Anything placed in the ‘white cube’ can be considered art. Any artefact
+        placed within the gallery, will gain this ‘aura’ that automatically
+        produces an emotion within you, whether consciously or not. Even if it
+        is a craftsmanship’s work, when placed in that space, it will
+        automatically be considered art. The work could be purely aesthetic and
+        be considered art, and it could be purely conceptual and also be
+        considered art.
+      </Body>
+      <Body>
+        <em>
+          Anything can be considered art if validated by one of the several art
+          world mechanisms including museums, galleries, specialised media,
+          critics, curators, and/or collectors. Only in this way has the
+          Duchampian ready-made and most of the art produced since been accepted
+          and integrated into the formal art realm.{' '}
+        </em>
+        <a
+          href=" https://www.mdpi.com/2076-0752/7/3/28/htm"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Leonel Moura in ‘Robot Art: An Interview with Leonel Moura’
+        </a>
+      </Body>
+      <Body>
+        There are no limits to creation or lack thereof, the distinction between
+        works now is dependent on how big of an emotion it evokes on you. This
+        is where the importance of interactivity comes in.
+      </Body>
+      <Body>
         The performance ‘Rhythm 0’ (1974) by Marina Abramović (see figure 4) can
         also be considered generative. This performance consisted of the use of
         the audience as a generative system/ an emergence system. She placed a

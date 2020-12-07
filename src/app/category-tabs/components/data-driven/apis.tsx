@@ -40,13 +40,11 @@ const Apis: React.FC = () => {
       />
       <Subtitle> Summary and further thoughts</Subtitle>
       <Body>
-        In this subsection, we have considered a definition (and criteria) for
-        emergence and generative art and have looked at some examples and
-        effects. As society gets familiar with computational art, the surprise
-        factor of generative art may be short lived or difficult to achieve
-        through traditional methods , so fresh, innovative ways of producing it
-        are necessary, harnessing latest technologies such as AI and wearable
-        tech. It should be remembered and acknowledged that generative art is a
+        As society gets familiar with computational art, the surprise factor of
+        generative art may be short lived or difficult to achieve through
+        traditional methods , so fresh, innovative ways of producing it are
+        necessary, harnessing latest technologies such as AI and wearable tech.
+        It should be remembered and acknowledged that generative art is a
         partnership and collaboration between human, machine and nature (if data
         sets from natural sources are used). Therefore, generative art is
         possibly an example where human, machine and nature can be seen as
